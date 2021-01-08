@@ -17,6 +17,8 @@ Here, considering the above, set up a hypothesis,
 In this notebook, Let's see how BERT text embeddings performs well in predicting stock rate.
 
 
+<br>
+
 
 ## Data
 
@@ -28,7 +30,7 @@ This dataset is suitable for this experimentation and help us to save time of cr
 
 Availabel here → [kaggle page](https://www.kaggle.com/aaron7sun/stocknews)
 
-
+<br>
 
 ## Features
 
@@ -41,6 +43,7 @@ Availabel here → [kaggle page](https://www.kaggle.com/aaron7sun/stocknews)
 - **BERT_Embeddings_pca_test.npy**
   This file holds compressed 3 dimentional embeddings by PCA for test data.
 
+<br>
 
 
 ### BERT embeddings of Top 25 News Topics
@@ -52,6 +55,8 @@ BERT embeddings of Top 25 News Topics by BERT has too high 1536 dimentional data
 ※ But I'm not sure that this transforming is the best way. I have to find a good way to make the best use of BERT embeddings. If you know, contact me, please.
 
 
+<br>
+
 
 ## Result Example
 
@@ -62,17 +67,21 @@ Stock prices data is time-series data, therefore **LSTM model** is used to perfo
 |       data        |                       Original feature                       |             BERT embeddings of top10 news topics             |             BERT embeddings of top1 news topics              |
 | :---------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |        Acc        | <font color="red"><strong>0.9576719576719577</strong></font> |                      0.8809523809523809                      |                      0.9444444444444444                      |
-|   acc  history    | ![org_acc](/Users/macbookpro/Desktop/bert/exchange/results/org_acc.png) | ![bert_acc](/Users/macbookpro/Desktop/bert/exchange/results/bert_acc.png) | ![bert_top1_acc](/Users/macbookpro/Desktop/bert/exchange/results/bert_top1_acc.png) |
-| loss<br />history | ![org_loss](/Users/macbookpro/Desktop/bert/exchange/results/org_loss.png) | ![bert_loss](/Users/macbookpro/Desktop/bert/exchange/results/bert_loss.png) | ![bert_top1_loss](/Users/macbookpro/Desktop/bert/exchange/results/bert_top1_loss.png) |
+|   acc  history    | ![org_acc](results/org_acc.png) | ![bert_acc](results/bert_acc.png) | ![bert_top1_acc](results/bert_top1_acc.png) |
+| loss<br />history | ![org_loss](results/org_loss.png) | ![bert_loss](results/bert_loss.png) | ![bert_top1_loss](results/bert_top1_loss.png) |
 
 **※ Note that ACC=0.958 is the best score among [kaggle notebooks](https://www.kaggle.com/aaron7sun/stocknews/notebooks) (2021/01/05)**
 
+
+<br>
 
 
 ## Future
 
 - The way to handle embedded data needs to be improved.
 
+
+<br>
 
 
 ## Reference
