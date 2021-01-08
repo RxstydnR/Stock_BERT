@@ -12,7 +12,7 @@
 
 Here, considering the above, set up a hypothesis,
 
-#### **"Can the features embeddings by BERT improve an accuracy of the exchange rate prediction??"**
+#### "Can the features embeddings by BERT improve an accuracy of the exchange rate prediction??"
 
 In this notebook, Let's see how BERT text embeddings performs well in predicting stock rate.
 
